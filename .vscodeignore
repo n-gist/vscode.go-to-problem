@@ -1,0 +1,10 @@
+.vscode/**
+node_modules/**
+src/**
+.editorconfig
+.gitignore
+esbuild.js
+eslint.config.js
+tsconfig.json
+dist/**
+!dist/extension.cjs

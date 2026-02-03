@@ -1,0 +1,511 @@
+{
+    "name": "go-to-problem",
+    "displayName": "Go to Problem",
+    "description": "Problems navigation",
+    "author": "Gist",
+    "publisher": "Gist",
+    "license": "MIT",
+    "version": "1.0.0",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/n-gist/vscode.go-to-problem"
+    },
+    "engines": {
+        "vscode": "^1.108.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "problems",
+        "navigation",
+        "error",
+        "warning",
+        "severity",
+        "go to error",
+        "no peek"
+    ],
+    "activationEvents": [],
+    "contributes": {
+        "commands": [
+            {
+                "command": "go-to-problem.1.nextInWorkspace",
+                "title": "Go to Problem: 1. Next in Workspace"
+            },
+            {
+                "command": "go-to-problem.1.next",
+                "title": "Go to Problem: 1. Next"
+            },
+            {
+                "command": "go-to-problem.1.prevInWorkspace",
+                "title": "Go to Problem: 1. Previous in Workspace"
+            },
+            {
+                "command": "go-to-problem.1.prev",
+                "title": "Go to Problem: 1. Previous"
+            },
+            {
+                "command": "go-to-problem.1.openAll",
+                "title": "Go to Problem: 1. Open All"
+            },
+            {
+                "command": "go-to-problem.2.nextInWorkspace",
+                "title": "Go to Problem: 2. Next in Workspace"
+            },
+            {
+                "command": "go-to-problem.2.next",
+                "title": "Go to Problem: 2. Next"
+            },
+            {
+                "command": "go-to-problem.2.prevInWorkspace",
+                "title": "Go to Problem: 2. Previous in Workspace"
+            },
+            {
+                "command": "go-to-problem.2.prev",
+                "title": "Go to Problem: 2. Previous"
+            },
+            {
+                "command": "go-to-problem.2.openAll",
+                "title": "Go to Problem: 2. Open All"
+            },
+            {
+                "command": "go-to-problem.3.nextInWorkspace",
+                "title": "Go to Problem: 3. Next in Workspace"
+            },
+            {
+                "command": "go-to-problem.3.next",
+                "title": "Go to Problem: 3. Next"
+            },
+            {
+                "command": "go-to-problem.3.prevInWorkspace",
+                "title": "Go to Problem: 3. Previous in Workspace"
+            },
+            {
+                "command": "go-to-problem.3.prev",
+                "title": "Go to Problem: 3. Previous"
+            },
+            {
+                "command": "go-to-problem.3.openAll",
+                "title": "Go to Problem: 3. Open All"
+            },
+            {
+                "command": "go-to-problem.4.nextInWorkspace",
+                "title": "Go to Problem: 4. Next in Workspace"
+            },
+            {
+                "command": "go-to-problem.4.next",
+                "title": "Go to Problem: 4. Next"
+            },
+            {
+                "command": "go-to-problem.4.prevInWorkspace",
+                "title": "Go to Problem: 4. Previous in Workspace"
+            },
+            {
+                "command": "go-to-problem.4.prev",
+                "title": "Go to Problem: 4. Previous"
+            },
+            {
+                "command": "go-to-problem.4.openAll",
+                "title": "Go to Problem: 4. Open All"
+            },
+            {
+                "command": "go-to-problem.5.nextInWorkspace",
+                "title": "Go to Problem: 5. Next in Workspace"
+            },
+            {
+                "command": "go-to-problem.5.next",
+                "title": "Go to Problem: 5. Next"
+            },
+            {
+                "command": "go-to-problem.5.prevInWorkspace",
+                "title": "Go to Problem: 5. Previous in Workspace"
+            },
+            {
+                "command": "go-to-problem.5.prev",
+                "title": "Go to Problem: 5. Previous"
+            },
+            {
+                "command": "go-to-problem.5.openAll",
+                "title": "Go to Problem: 5. Open All"
+            }
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "go-to-problem.1.nextInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.1.next",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.1.prevInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.1.prev",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.1.openAll"
+                },
+                {
+                    "command": "go-to-problem.2.nextInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.2.next",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.2.prevInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.2.prev",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.2.openAll"
+                },
+                {
+                    "command": "go-to-problem.3.nextInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.3.next",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.3.prevInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.3.prev",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.3.openAll"
+                },
+                {
+                    "command": "go-to-problem.4.nextInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.4.next",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.4.prevInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.4.prev",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.4.openAll"
+                },
+                {
+                    "command": "go-to-problem.5.nextInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.5.next",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.5.prevInWorkspace"
+                },
+                {
+                    "command": "go-to-problem.5.prev",
+                    "when": "activeEditor == 'workbench.editors.files.textFileEditor'"
+                },
+                {
+                    "command": "go-to-problem.5.openAll"
+                }
+            ]
+        },
+        "keybindings": [
+            {
+                "command": "go-to-problem.1.nextInWorkspace",
+                "key": "F8"
+            },
+            {
+                "command": "go-to-problem.1.next",
+                "key": "Alt+F8",
+                "when": "editorFocus"
+            },
+            {
+                "command": "go-to-problem.1.prevInWorkspace",
+                "key": "Shift+F8"
+            },
+            {
+                "command": "go-to-problem.1.prev",
+                "key": "Shift+Alt+F8",
+                "when": "editorFocus"
+            }
+        ],
+        "configuration": {
+            "title": "Go to Problem",
+            "properties": {
+                "go-to-problem": {
+                    "description": "Go to Problem extension settings",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "definitions": {
+                        "navConfig": {
+                            "description": "Configuration set #",
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "enabled": {
+                                    "description": "Controls whether set is enabled",
+                                    "type": "boolean",
+                                    "default": true
+                                },
+                                "severity": {
+                                    "description": "Severity of the problems to navigate",
+                                    "type": "string",
+                                    "default": "error|warning|info",
+                                    "anyOf": [
+                                        {
+                                            "type": "string",
+                                            "pattern": "^(error|warning|info|hint)(\\s*[|>]\\s*(error|warning|info|hint)){0,3}$"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "enum": [
+                                                "error",
+                                                "error|warning",
+                                                "error > warning",
+                                                "error|warning > info|hint",
+                                                "error > warning > info > hint",
+                                                "hint > info > warning > error",
+                                                "error|warning|info",
+                                                "error|warning|info|hint"
+                                            ],
+                                            "enumDescriptions": [
+                                                "Navigate over Errors only",
+                                                "Navigate over Errors and Warnings",
+                                                "Navigate over Errors and Warnings. Prioritize Errors",
+                                                "Navigate over all problems. Prioritize Errors and Warnings",
+                                                "Navigate over all problems. Prioritize each severity level",
+                                                "Reversed prioritization",
+                                                "Navigate over Errors, Warnings, Infos without prioritization",
+                                                "Navigate over all problems without prioritization"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "reveal": {
+                                    "description": "Reveal type. When standard peek is used, only \"center\" and \"top\" are responsive",
+                                    "type": "string",
+                                    "default": "center",
+                                    "enum": [
+                                        "little",
+                                        "center",
+                                        "top",
+                                        "adaptive"
+                                    ],
+                                    "enumDescriptions": [
+                                        "Reveal with as little scrolling as possible",
+                                        "Reveal in the center of the viewport",
+                                        "Reveal at the top of the viewport",
+                                        "Reveal in the center if the problem is outside or close to the top/bottom of the viewport"
+                                    ]
+                                },
+                                "prioritizeActive": {
+                                    "description": "Don't navigate to other sources while the active one contains problems. In other words, 'next/prevInWorkspace' commands will work as 'next/prev' as long as there are problems in active editor",
+                                    "type": "boolean",
+                                    "default": false
+                                },
+                                "openInPreview": {
+                                    "description": "Controls whether to open sources in preview mode. Responsive only when \"workbench.editor.enablePreview\" is true",
+                                    "type": "boolean",
+                                    "default": true
+                                },
+                                "peek": {
+                                    "description": "Peek configuration",
+                                    "type": "object",
+                                    "properties": {
+                                        "enabled": {
+                                            "description": "Controls whether the peek is enabled",
+                                            "type": "boolean",
+                                            "default": true
+                                        },
+                                        "severity": {
+                                            "description": "Severity of the problems for which a peek is shown",
+                                            "type": "string",
+                                            "default": "error, warning, info, hint",
+                                            "anyOf": [
+                                                {
+                                                    "type": "string",
+                                                    "pattern": "^(error|warning|info|hint)(,\\s*(error|warning|info|hint)){0,3}$"
+                                                },
+                                                {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "error",
+                                                        "error, warning",
+                                                        "error, warning, info",
+                                                        "error, warning, info, hint"
+                                                    ],
+                                                    "enumDescriptions": [
+                                                        "Peek on Errors",
+                                                        "Peek on Errors and Warnings",
+                                                        "Peek on all problems except Hints",
+                                                        "Peek on all problems"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "style": {
+                                            "description": "Peek style",
+                                            "type": "string",
+                                            "default": "standard",
+                                            "enum": [
+                                                "standard",
+                                                "hover"
+                                            ],
+                                            "enumDescriptions": [
+                                                "Built-in error navigation peek. Set \"problems.sortOrder\": \"position\" to make it work properly. Doesn't supports Hints. For Hints will be used hover type peek",
+                                                "Built-in hover. Can't be shown immediately when \"editor.smoothScrolling\" is true. In this case the delay is used. If the hover is not appearing, increase \"go-to-problem.smoothScrollingHoverMinDelay\""
+                                            ]
+                                        }
+                                    }
+                                },
+                                "filter": {
+                                    "description": "Source filter settings to include in problems navigation",
+                                    "type": "object",
+                                    "properties": {
+                                        "include": {
+                                            "description": "Glob '**/*' patterns for paths to include in problems search. If at least one entry is set, everything not matched will be excluded. Patterns capabilities correspond to the 'glob-to-regexp' library with the 'globstars' and 'extend' options enabled",
+                                            "type": "array",
+                                            "default": [],
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "exclude": {
+                                            "description": "Glob '**/*' patterns for paths to exclude from problems search. Applied after \"include\" setting (matched for both will be excluded). Patterns capabilities correspond to the 'glob-to-regexp' library with the 'globstars' and 'extend' options enabled",
+                                            "type": "array",
+                                            "default": [],
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "caseSensitive": {
+                                            "description": "Case-sensitive matching",
+                                            "type": "boolean",
+                                            "default": true
+                                        },
+                                        "workspaceRelative": {
+                                            "description": "Controls whether to use relative paths when matching sources within the workspace",
+                                            "type": "boolean",
+                                            "default": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "properties": {
+                        "1": {
+                            "type": "object",
+                            "$ref": "#/properties/go-to-problem/definitions/navConfig"
+                        },
+                        "2": {
+                            "type": "object",
+                            "$ref": "#/properties/go-to-problem/definitions/navConfig"
+                        },
+                        "3": {
+                            "type": "object",
+                            "$ref": "#/properties/go-to-problem/definitions/navConfig"
+                        },
+                        "4": {
+                            "type": "object",
+                            "$ref": "#/properties/go-to-problem/definitions/navConfig"
+                        },
+                        "5": {
+                            "type": "object",
+                            "$ref": "#/properties/go-to-problem/definitions/navConfig"
+                        },
+                        "peekHoverSmoothScrollingDelay": {
+                            "description": "Minimal delay in milliseconds of the hover style peek when \"editor.smoothScrolling\" is true. Increase if hover does not appear or blinks",
+                            "type": "number",
+                            "default": 175
+                        },
+                        "peekStandardAutoHide": {
+                            "description": "Controls whether to hide the standard peek automatically on document edit or cursor move",
+                            "type": "string",
+                            "default": "off",
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "pattern": "^(edit|moveKeyboard|moveMouse|moveOther)(,\\s*(edit|moveKeyboard|moveMouse|moveOther)){0,3}$"
+                                },
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "off",
+                                        "on",
+                                        "moveKeyboard",
+                                        "moveMouse",
+                                        "moveOther",
+                                        "moveKeyboard, moveMouse, moveOther",
+                                        "edit",
+                                        "edit, moveKeyboard, moveOther"
+                                    ],
+                                    "enumDescriptions": [
+                                        "Don't hide automatically",
+                                        "Hide on any reason",
+                                        "When the cursor is moved by keyboard",
+                                        "When the cursor is moved by mouse",
+                                        "When the cursor is moved as a result of events other than keyboard and mouse, such as commands, cursor movements due to editing, and others",
+                                        "When the cursor is moved by any reason",
+                                        "When the document is edited",
+                                        "When the document is edited or the cursor is moved by something other than mouse"
+                                    ]
+                                }
+                            ]
+                        },
+                        "problemsSortOrderNotification": {
+                            "description": "Show notification when attempting to use standard error peek while \"problems.sortOrder\" is not set to \"position\"",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "base": {
+                            "type": "object",
+                            "$ref": "#/properties/go-to-problem/definitions/navConfig"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "type": "module",
+    "main": "./dist/extension.cjs",
+    "scripts": {
+        "vscode:prepublish": "npm run esbuild",
+        "compile": "npm run check-types && npm run lint && node esbuild.js",
+        "watch": "npm-run-all -p watch:*",
+        "watch:esbuild": "node esbuild.js --watch",
+        "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+        "esbuild": "npm run check-types && npm run lint && node esbuild.js --production",
+        "check-types": "tsc --noEmit",
+        "lint": "eslint src"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.1",
+        "@stylistic/eslint-plugin": "^5.6.1",
+        "@types/glob-to-regexp": "^0.4.4",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^22.19.3",
+        "@types/vscode": "^1.107.0",
+        "@typescript-eslint/eslint-plugin": "^8.45.0",
+        "@typescript-eslint/parser": "^8.45.0",
+        "@vscode/vsce": "^3.7.1",
+        "esbuild": "^0.27.1",
+        "eslint": "^9.39.2",
+        "npm-run-all": "^4.1.5",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.49.0"
+    },
+    "dependencies": {
+        "glob-to-regexp": "^0.4.1"
+    }
+}
